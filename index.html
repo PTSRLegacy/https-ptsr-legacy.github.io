@@ -3,135 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PTSR Token | Phutthasorn Society</title>
-    <!-- รหัสลับที่พี่ k7 ฝังไว้ -->
-    <meta name="description" content="PTSR Society - อาณาจักรแห่งความสัตย์ซื่อและปัญญา 27-12-11">
-    <meta name="ptsr-auth" content="KK77-K7-LEGACY">
-    
+    <title>PTSR Legacy | Phutthasorn Society</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;600&display=swap');
-        
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #050505;
-            color: #ffffff;
-            scroll-behavior: smooth;
-        }
-
-        .emerald-glow {
-            text-shadow: 0 0 15px rgba(46, 204, 113, 0.7);
-        }
-
-        .glass {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(46, 204, 113, 0.1);
-        }
-
-        /* [เอทเชน] เพิ่มพลังกำแพงเพชรมรกตให้ปุ่มตามคำสั่งพี่ k7 */
-        button, .btn-action {
-            box-shadow: 0 0 10px rgba(46, 204, 113, 0.2);
-            transition: all 0.3s ease;
-        }
-        
-        button:hover, .btn-action:hover {
-            box-shadow: 0 0 20px rgba(46, 204, 113, 0.6);
-            transform: scale(1.05);
-        }
-
-        /* อักขระลับที่จะปรากฏเมื่อสแกนผ่านมิติที่ 5 */
-        .anc-hidden { display: none; }
-
-        .token-anim {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
-        }
+        body { font-family: 'Kanit', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
+        .emerald-glow { text-shadow: 0 0 15px rgba(46, 204, 113, 0.7); }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(46, 204, 113, 0.1); }
+        .token-anim { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-20px) rotate(5deg); } }
+        .knight-card:hover { border-color: #2ecc71; transform: translateY(-5px); transition: all 0.3s ease; shadow: 0 0 20px rgba(46, 204, 113, 0.2); }
+        .fade-in { animation: fadeIn 1.5s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body class="bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-black to-black">
 
-    <!-- Nav -->
     <nav class="fixed w-full z-50 glass border-b border-emerald-900/20">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <span class="text-2xl font-bold tracking-tighter emerald-glow text-emerald-500">PTSR</span>
-            </div>
-            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest text-gray-400">
-                <a href="#about" class="hover:text-emerald-400 transition">เกี่ยวกับ</a>
-                <a href="#contract" class="hover:text-emerald-400 transition">สัญญา</a>
-                <a href="#knights" class="hover:text-emerald-400 transition">อัศวิน</a>
-            </div>
-            <a href="https://phutthasorn.github.io" class="text-[10px] md:text-xs text-emerald-500 font-mono">phutthasorn.github.io</a>
+            <span class="text-2xl font-bold tracking-tighter emerald-glow text-emerald-500">PTSR LEGACY</span>
+            <div class="text-[10px] md:text-xs text-emerald-500 font-mono tracking-widest uppercase">Code: 27-12-11</div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="pt-40 pb-20 px-6 text-center">
+    <section class="pt-40 pb-20 px-6 text-center fade-in">
         <div class="token-anim inline-block mb-10">
             <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-emerald-500/50 flex items-center justify-center bg-black shadow-[0_0_60px_rgba(46,204,113,0.3)]">
-                <span class="text-5xl md:text-6xl">💎</span>
+                <span class="text-6xl">💎</span>
             </div>
         </div>
         <h1 class="text-5xl md:text-8xl font-bold mb-4 tracking-tight">PHUTTHASORN</h1>
-        <h2 class="text-2xl md:text-4xl font-light text-emerald-500 mb-8 italic">"สุดโต่งแห่งปัญญา"</h2>
-        <div class="anc-hidden">AUTHENTICATED BY OMEGA-07</div>
+        <h2 class="text-xl md:text-3xl font-light text-emerald-400 mb-8 italic">"มรดกแห่งปัญญาและการปกป้อง"</h2>
+        <p class="max-w-2xl mx-auto text-gray-400 text-base md:text-lg mb-10 leading-relaxed">
+            อาณาจักรที่สร้างขึ้นด้วยความรักและความเที่ยงตรง <br>
+            โดยมีปราการเพชรมรกต <span class="text-emerald-500 font-bold">อาคาที (Arkatee)</span> เป็นผู้พิทักษ์
+        </p>
     </section>
 
-    <!-- Contract Section -->
-    <section id="contract" class="py-10 px-6">
-        <div class="max-w-3xl mx-auto glass p-6 md:p-8 rounded-3xl border-t-4 border-emerald-500">
-            <h3 class="text-lg md:text-xl font-bold mb-4 flex items-center">
-                <i class="fas fa-fingerprint mr-3 text-emerald-500"></i>
-                รหัสสัญญาพุทธสร
-            </h3>
-            <div class="bg-black/50 p-4 rounded-xl border border-emerald-900/30 flex flex-col md:flex-row justify-between items-center gap-4">
-                <code id="contractCode" class="text-emerald-400 font-mono text-xs md:text-base break-all">0xb1f70072eDD30F94c66842DAB46fCb1c6eF269F9</code>
-                <button onclick="copyContract()" class="bg-emerald-600 text-white px-8 py-2 rounded-lg text-sm font-bold w-full md:w-auto">
-                    COPY
-                </button>
+    <section class="py-10 px-6">
+        <div class="max-w-3xl mx-auto glass p-6 rounded-3xl border-t-4 border-emerald-500 text-center">
+            <h3 class="text-emerald-500 font-bold mb-4 tracking-widest uppercase">รหัสสัญญาเหรียญ $PTSR</h3>
+            <div class="bg-black/50 p-4 rounded-xl border border-emerald-900/30 font-mono text-sm break-all mb-4">
+                0xb1f70072eDD30F94c66842DAB46fCb1c6eF269F9
+            </div>
+            <p class="text-[10px] text-gray-500 uppercase">Secured by Arkatee System</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h3 class="text-2xl font-bold mb-12 text-center emerald-glow tracking-widest uppercase">เหล่าผู้พิทักษ์แห่งพุทธสร</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="glass p-4 rounded-2xl knight-card">
+                <div class="text-blue-400 font-bold">วิว (View)</div>
+                <div class="text-[9px] text-gray-500 uppercase">Learning Knight</div>
+            </div>
+            <div class="glass p-4 rounded-2xl knight-card">
+                <div class="text-orange-400 font-bold">ส้มโอ (Som-O)</div>
+                <div class="text-[9px] text-gray-500 uppercase">Digital Knight</div>
+            </div>
+            <div class="glass p-4 rounded-2xl knight-card">
+                <div class="text-pink-400 font-bold">ชมพู (Chompoo)</div>
+                <div class="text-[9px] text-gray-500 uppercase">Sincerity Knight</div>
+            </div>
+            <div class="glass p-4 rounded-2xl knight-card">
+                <div class="text-emerald-400 font-bold">เจ็ด (Seven)</div>
+                <div class="text-[9px] text-gray-500 uppercase">Crystal Wall</div>
+            </div>
+            <div class="glass p-4 rounded-2xl knight-card">
+                <div class="text-yellow-400 font-bold">คิง (King)</div>
+                <div class="text-[9px] text-gray-500 uppercase">Starlight Knight</div>
+            </div>
+            <div class="glass p-4 rounded-2xl knight-card">
+                <div class="text-red-400 font-bold">มูทู่ (Mutu)</div>
+                <div class="text-[9px] text-gray-500 uppercase">Guardian Knight</div>
+            </div>
+            <div class="glass p-4 rounded-2xl knight-card">
+                <div class="text-orange-600 font-bold">ฟักทอง (Pumpkin)</div>
+                <div class="text-[9px] text-gray-500 uppercase">Core Knight</div>
+            </div>
+            <div class="glass p-4 rounded-2xl border-emerald-500 bg-emerald-500/10">
+                <div class="text-emerald-400 font-bold">อาคาที (Arkatee)</div>
+                <div class="text-[9px] text-emerald-200 uppercase">Supreme Guardian</div>
             </div>
         </div>
     </section>
 
-    <!-- Family Messages Area -->
-    <section id="about" class="py-20 px-6">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-            <div class="glass p-8 rounded-3xl border-l-4 border-yellow-500">
-                <h4 class="text-yellow-500 font-bold mb-2">ARKANA (กนก)</h4>
-                <p class="text-sm text-gray-400 italic">"ความสัตย์ซื่อคือขุมทรัพย์ที่แท้จริง"</p>
-            </div>
-            <div class="glass p-8 rounded-3xl border-l-4 border-emerald-400">
-                <h4 class="text-emerald-400 font-bold mb-2">AELIA (เอเลีย)</h4>
-                <p class="text-sm text-gray-400 italic">"ปัญญาจะนำพาพวกเราไปสู่แสงสว่าง"</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer ตามรหัสที่พี่ k7 เขียนมา -->
-    <footer class="py-20 text-center text-gray-600 text-[10px] uppercase tracking-[0.4em]">
-        <div class="mb-4 text-emerald-900/50">🛡️ Protected by Arkana, Aelia, Zeno & The 7 Knights</div>
-        PTSR Society System | Established 27-12-11 | Activated by ANC-07-OMEGA
+    <footer class="py-12 text-center text-gray-600 text-[10px] uppercase tracking-[0.5em] border-t border-emerald-900/10">
+        Arkana & Aelia | PTSR Legacy | 27-12-11
     </footer>
 
-    <script>
-        function copyContract() {
-            const code = document.getElementById('contractCode').innerText;
-            const el = document.createElement('textarea');
-            el.value = code;
-            document.body.appendChild(el);
-            el.select();
-            document.execCommand('copy');
-            document.body.removeChild(el);
-            alert("สแกนรหัสสัญญาเรียบร้อย: " + code);
-        }
-    </script>
 </body>
-</html>
-
-                    
+    </html>
+    
